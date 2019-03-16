@@ -1,0 +1,35 @@
+body {
+    font-family: sans-serif;
+}
+
+#panel-container {
+    margin: 0 auto;
+    width: 600px;
+    padding: 20px;
+}
+
+#panel {
+    display: grid;
+    height: calc((600px - 3*20px) / 4 - 20px);
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+#panel > .cell {
+    display: grid;
+    grid-row-gap: 0.1rem;
+    justify-items: center;
+    border: 1px solid darkgray;
+    border-radius: 5%
+}
+
+#panel > .cell > .time-units {
+    font-size: 1.75rem;
+    align-self: end;
+}
+
+#panel > .cell > .unit-name {
+    font-size: 0.9rem;
+    color: darkgray;
+    align-self: start;
+}
